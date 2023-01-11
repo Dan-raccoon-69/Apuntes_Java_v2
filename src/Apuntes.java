@@ -774,12 +774,29 @@ public class Apuntes {
          * atributos, metodos, constructores.
          * DIFERENCIA ENTRE UNA C. ABSTRACTA Y UNA NORMAL:
          * Pose por lo menos un metodo abstracto.
-         * Pueden ser heredadas pero NO INSTANCIADAS.
+         * Pueden ser heredadas pero NO INSTANCIADAS, solo pueden ser instanciadas por
+         * las clases concretas (las clases que heredan de la CLASE ABSTRACTA).
          * 
          * ¿Que es un metodo abstracto?
          * R= Aquel que no pose un cuerpo, define que hacer pero no como.
          * 
          */
+
+        // POLIMORFISMO (INTERFACES)
+        /**
+         * Poli: muchos, morfismo: formas, = muchas formas
+         * 
+         * 
+         * 
+         */
+        System.out.println();
+        Circulo circulo1 = new Circulo(4);
+        System.out.println("Area circulo1: " + circulo1.getArea());
+        System.out.println("Perimetro circulo1: " + circulo1.getPerimetro());
+        Rectangulo rectangulo1 = new Rectangulo(4, 5);
+        System.out.println("Area Rectangulo1: " + rectangulo1.getArea());
+        System.out.println("Perimetro Rectangulo1: " + rectangulo1.getPerimetro());
+
 
         // PAQUETES EN JAVA
         /**
