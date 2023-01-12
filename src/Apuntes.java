@@ -143,8 +143,8 @@ public class Apuntes {
          * Dependiendo a la condicion, realizara el proceso del codigo true o false.
          */
 
-        //String cadena = (8 > 9) ? "Verdadero" : "Falso";
-        //System.out.println("\nOperador Ternario: " + cadena);
+        // String cadena = (8 > 9) ? "Verdadero" : "Falso";
+        // System.out.println("\nOperador Ternario: " + cadena);
 
         // CLASE MATH
         /**
@@ -785,18 +785,28 @@ public class Apuntes {
         // POLIMORFISMO (INTERFACES)
         /**
          * Poli: muchos, morfismo: formas, = muchas formas
-         * 
-         * 
-         * 
+         */
+        /*
+         * System.out.println();
+         * Circulo circulo1 = new Circulo(4);
+         * System.out.println("Area circulo1: " + circulo1.getArea());
+         * System.out.println("Perimetro circulo1: " + circulo1.getPerimetro());
+         * Rectangulo rectangulo1 = new Rectangulo(4, 5);
+         * System.out.println("Area Rectangulo1: " + rectangulo1.getArea());
+         * System.out.println("Perimetro Rectangulo1: " + rectangulo1.getPerimetro());
          */
         System.out.println();
-        Circulo circulo1 = new Circulo(4);
-        System.out.println("Area circulo1: " + circulo1.getArea());
-        System.out.println("Perimetro circulo1: " + circulo1.getPerimetro());
-        Rectangulo rectangulo1 = new Rectangulo(4, 5);
-        System.out.println("Area Rectangulo1: " + rectangulo1.getArea());
-        System.out.println("Perimetro Rectangulo1: " + rectangulo1.getPerimetro());
+        Figura2 arrayFiguras[] = new Figura2[5];
+        arrayFiguras[0] = new Rectangulo("Rectangulo1", 4, 5);
+        arrayFiguras[1] = new Rectangulo("Rectangulo2", 6, 5);
+        arrayFiguras[2] = new Circulo("Circulo1", 4);
+        arrayFiguras[3] = new Circulo("Circulo2", 2);
+        arrayFiguras[4] = new Rectangulo("Rectangulo3", 10, 5);
 
+        for (Figura2 eachFigure : arrayFiguras) {
+            System.out.println("Nombre: " + eachFigure.getNombre() + ", Area: " + eachFigure.getArea() +
+                    ", Perimetro: " + eachFigure.getPerimetro());
+        }
 
         // PAQUETES EN JAVA
         /**

@@ -10,6 +10,10 @@ public abstract class Figura {
         this.numLados = numLados;
     }
 
-    // metodo que define que hacer pero no como 
+    public int getnumLados() {
+        return this.numLados;
+    }
+
+    // metodo que define que hacer pero no como
     public abstract double area();
 }
