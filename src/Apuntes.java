@@ -785,6 +785,12 @@ public class Apuntes {
         // POLIMORFISMO (INTERFACES)
         /**
          * Poli: muchos, morfismo: formas, = muchas formas
+         * Es una colección de datos abstractos y propiedades constantes que se
+         * especifica que se debe de hacer pero no el como.
+         * Seran las clases hijas quienes definiran su comportamiento.
+         * Una clase puede implementar n cantidad de interfaces que se necesite.
+         * //CHECA CLASE FIGURA2, CIRCULO Y RECTANGULO para visualizar la
+         * implementación de las interfaces.
          */
         /*
          * System.out.println();

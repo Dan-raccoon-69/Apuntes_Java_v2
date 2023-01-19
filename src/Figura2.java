@@ -1,9 +1,9 @@
 // Archivo - clase para el entendimiento de las interfaces - polimorfismo en java.
 public interface Figura2 {
     // Metodos que se tienen que implementar forzozamente en las respectivas clases.
-    double getArea();
+    public abstract double getArea();
 
-    double getPerimetro();
+    public abstract double getPerimetro();
 
-    String getNombre();
+    public abstract String getNombre();
 }
