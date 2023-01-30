@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +11,6 @@ import java.lang.Math;
 
 public class Apuntes {
     public static void main(String[] args) throws Exception {
-        System.out.println("Ejecutando codigo Java desde VSC! \n");
         System.out.println("Mi nombre es Daniel Gustavo");
 
         // JAVA CARACTERISTICAS
@@ -395,7 +395,7 @@ public class Apuntes {
             }
             System.out.println("");
         }
-        // imprmiendo con un for each
+        // imprimiendo con un for each
         System.out.println("Matriz con ForEach");
         for (int fila[] : matriz) {
             for (int columna : fila) {
@@ -403,6 +403,20 @@ public class Apuntes {
             }
             System.out.println("");
         }
+        //matriz inicializada
+        int matriz1[][] = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        //imprimiendo
+        System.out.println("Matriz inicializada: ");
+        for (int[] item : matriz1) {
+            for (int is : item) {
+                System.out.print(is + " ");
+            }
+        }
+        System.out.println();
 
         // EJERCICIO
 
@@ -788,19 +802,19 @@ public class Apuntes {
          * Es una colección de datos abstractos y propiedades constantes que se
          * especifica que se debe de hacer pero no el como.
          * Seran las clases hijas quienes definiran su comportamiento.
+         * Los metodos A. pueden omitir la palabra "ABSTRAC", se da por entendido que
+         * los metodos que se encuentren en una interfaz y no posean un cuerpo
+         * seran metodos abstractos.
          * Una clase puede implementar n cantidad de interfaces que se necesite.
+         * Las interfaces tambien tienen la posibilidad de herencia entre interfaces,
+         * es la misma sintaxis que usabamos con clases normales.
+         * Los metodos abstractos que posean nuestra clase padre no s eran
+         * implementados en la interfaz hija, los metodos seran implementados hasta que
+         * una clase implemente la interfaz hija.
          * //CHECA CLASE FIGURA2, CIRCULO Y RECTANGULO para visualizar la
-         * implementación de las interfaces.
+         * implementación de las interfaces y ejemplos de lo antes mencionado.
          */
-        /*
-         * System.out.println();
-         * Circulo circulo1 = new Circulo(4);
-         * System.out.println("Area circulo1: " + circulo1.getArea());
-         * System.out.println("Perimetro circulo1: " + circulo1.getPerimetro());
-         * Rectangulo rectangulo1 = new Rectangulo(4, 5);
-         * System.out.println("Area Rectangulo1: " + rectangulo1.getArea());
-         * System.out.println("Perimetro Rectangulo1: " + rectangulo1.getPerimetro());
-         */
+
         System.out.println();
         Figura2 arrayFiguras[] = new Figura2[5];
         arrayFiguras[0] = new Rectangulo("Rectangulo1", 4, 5);
@@ -822,6 +836,9 @@ public class Apuntes {
          * puede ocasionar problemas si es que no estan divididos en paquetes.
          * Agrupacion de clases con caracteristicas comunes.
          * Mantenibilidad de codigo.
+         * Para importar una clase de algun otro paquete necesitas colocar el paquete
+         * y el nombre de la clase a importar, o en su caso colocar * para importar
+         * todas las clases existentes.
          */
 
         // API DE JAVA
@@ -829,8 +846,12 @@ public class Apuntes {
          * Cada version de JAVA tiene publicada una ayuda online
          * para consultar la documentación de cada una de sus clases
          * en formato HTML.
+         * Es una biblioteca de clases ya definidas, las cuales podemos utilizar para
+         * agilizar nuestro proceso de desarrollo.
          * Tambien se le conoce como la API JAVA DOCS.
          * https://docs.oracle.com/javase/8/docs/api/index.html
+         * https://docs.oracle.com/javase/9/docs/api/index.html?overview-summary.html
+         * 
          */
 
         Apuntes.imprimeMensaje("hola", "soy", "daniel");
