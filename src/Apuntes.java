@@ -403,13 +403,13 @@ public class Apuntes {
             }
             System.out.println("");
         }
-        //matriz inicializada
+        // matriz inicializada
         int matriz1[][] = {
-            {1,2,3},
-            {4,5,6},
-            {7,8,9}
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
-        //imprimiendo
+        // imprimiendo
         System.out.println("Matriz inicializada: ");
         for (int[] item : matriz1) {
             for (int is : item) {
@@ -852,6 +852,32 @@ public class Apuntes {
          * https://docs.oracle.com/javase/8/docs/api/index.html
          * https://docs.oracle.com/javase/9/docs/api/index.html?overview-summary.html
          * 
+         */
+
+        // EXCEPCIONES
+        /**
+         * Son algunos errores que púeden surgir en nuestro programa al momento de estar
+         * ejecutandolo.
+         * Algunos errores por los que se genera una excepcion: desbordamiento de
+         * memoria, un intento de dividir entre 0, ingresar una cadena en lugar de un
+         * numero como se espera o intentar acceder a un vector fuera de sus limites.
+         * Despues de generarse una excepcion, el codigo que se encuentra debajo ya no
+         * se lee.
+         * 
+         * Excepcion verificada: (IO exception) Java te obliga de evadir el error -
+         * verificarlas.
+         * Excepcion no verificada: Java no me obliga a evadir o solucionar ese error
+         * (error del programador).
+         * 
+         * Try - catch
+         * Se utiliza cuando encontramos excepciones verificadas o
+         * no verificadas.
+         * try{
+         * //codigo
+         * }
+         * catch (){
+         * // mensaje de la excepcion
+         * }
          */
 
         Apuntes.imprimeMensaje("hola", "soy", "daniel");
