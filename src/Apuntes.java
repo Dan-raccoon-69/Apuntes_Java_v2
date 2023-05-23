@@ -613,7 +613,7 @@ public class Apuntes {
         // clase Triangulo
         System.out.println("\nArea Triangulo");
 
-        // utilizando la clase JOptionPane
+        // Utilizando la clase JOptionPane
         /*
          * AQUI FALTA QUITAR COMENTARIOS
          * float base =
@@ -648,8 +648,7 @@ public class Apuntes {
          * clases que heredan desde otro paquete, (muy parecido a default).
          * DEFAULT: puede ser accedido desde su clase, las clases del mismo paquete
          * y las clases que heredan en el mismo paquete, PERO NO pueden acceder desde
-         * las
-         * clases que heredan desde otro paquete.
+         * las clases que heredan desde otro paquete.
          */
 
         // modificador, clase, paquete, subclase(mismo paquete), subclase(dif paquete),
@@ -658,6 +657,14 @@ public class Apuntes {
         // private, si, no, no, no, no
         // default, si, si, si, no, no
         // protected, si, si, si, si, no
+
+        /**
+         * El metodo toString es un metodo que se hereda por defecto de object.
+         * Nos muestra la referencia del objeto a menos que lo sobreescribamos. 
+         * Para llamarlo no es necesario colocar: nameObjeto.toString();
+         * Basta con colocar el nombre del objeto y nos mostrara por defecto el
+         * metodo toString.
+         */
 
         // MIEMBROS ESTATICOS
         /**
@@ -718,6 +725,7 @@ public class Apuntes {
          * Hay que tener en cuenta la relación que existe entre clases para que
          * lleguemos a una abstracción correcta, siguiendo la nomenclatura:
          * ? ES UN ?, hablando de jerarquia.
+         * Se logra colocando la palabra extends a la clase hija.
          * Ejemplos:
          * Mascota es un perro y un gato, la clase Mascota es la clase Principal
          * por lo tanto Mascota es la clase padre, perro-gato son clases hijas.
@@ -725,6 +733,15 @@ public class Apuntes {
          * por lo tanto Vehiculo es la clase base-padre, taxi-autobus son clases hijas
          * o tambien llamadas clases derivadas.
          */
+
+        // CLASES Y METODOS FINAL
+        /**
+         * Si un metodo es final, significa que no puede existir ningun otro metodo que se llame igual  
+         * en las clases que heredan de esta misma.
+         * Ejemplo: public final void dibujar(){}
+         * Si una clase es final, significa que no puede haber ningun hijo heredado de esa clase.
+         * Ejemplo: final public class figura{}
+        */ 
 
         // PALABRA RESERVADA SUPER
         /**
@@ -753,6 +770,7 @@ public class Apuntes {
          * en la clase hija.
          * Cambia el comportamiento de un metodo.
          * Se realiza sobre la herencia / poliformismo en diferentes clases.
+         * No confundir con la sobrecarga de metodos.
          */
 
         Pastor pastor2 = new Pastor();
@@ -790,10 +808,10 @@ public class Apuntes {
          * Pose por lo menos un metodo abstracto.
          * Pueden ser heredadas pero NO INSTANCIADAS, solo pueden ser instanciadas por
          * las clases concretas (las clases que heredan de la CLASE ABSTRACTA).
-         * 
          * ¿Que es un metodo abstracto?
          * R= Aquel que no pose un cuerpo, define que hacer pero no como.
-         * 
+         * Se utilizan sólo como super clases.
+         * (Checar archivos SerVivo, Planta, Animal, AnimalCarnivoro y AnimalHerbivoro)
          */
 
         // POLIMORFISMO (INTERFACES)
