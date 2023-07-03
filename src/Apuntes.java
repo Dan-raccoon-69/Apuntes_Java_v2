@@ -901,6 +901,22 @@ public class Apuntes {
         Apuntes.imprimeMensaje("hola", "soy", "daniel");
         Apuntes.imprimeMensaje("Mi", "perro", "se", "llama", "Lucas");
         Apuntes.sumaXelementos(2, 4, 6, 8, 20, 30, -30);
+
+
+        /*  MODELO VISTA CONTROLADOR (MVC) 
+         * MVC es un patrón de arquitectura de software que uytiliza 3 componentes.
+         * Separa la logica de la aplicación de la logica de la vista en una aplicación.
+         * Se utiliza tanto en componentes graficos basicos hasta sistemas empresariales.
+         * 
+         * Modelo: se encarga de los datos, generalmente consultando la base de datos, 
+         * actualizaciones, consultas, busquedas, etc.
+         * 
+         * Vista: representación visual de los datos, todo lo que tenga que ver con la interfaz grafica va aqui.
+         * 
+         * Controller: controla, recibe las ordenes del usuario a traves de los eventos de la interfaz grafica
+         * y se encarga de solicitar los datos al modelo y de comunicarselos a la vista.
+        */
+
     }
 
     public static void imprimeMensaje(String... mensajes) {
