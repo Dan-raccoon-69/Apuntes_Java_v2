@@ -917,6 +917,55 @@ public class Apuntes {
          * y se encarga de solicitar los datos al modelo y de comunicarselos a la vista.
         */
 
+
+        // JAVA WEB
+        /*
+         * Java Web es una parte, es una especificación de Java EE.
+         */
+
+
+        // CONCEPTOS - PALABRAS PARA JAVA WEB
+        /**
+         * Servlet: Web dinamicas, una especificacion, es una clase en java que nos permite manejar
+         * peticiones y las requiest mediante el protocolo HTTP. 
+         * JSP
+         * JPA
+         * Java Bean Validation
+         * JSF 2
+         * JTA
+          NO OLVIDAR QUE SIGUEN SIENDO PARTE DE JAVA EE */
+
+
+        // APLICACION WEB
+        /**
+         * Es un conjunto de paginas web que son generadas en respuesta a peticiones de un usuario.
+         * Son accesibles a traves de un navegador web, PC, dispositivo movi. 
+         * Son de tipo cliente - servidor.
+         * Las aplicaciones web modernas almacenan y recuperan los datos de un servidor de base de datos.    
+         */    
+
+         
+        /* SERVLET 
+         * Es una clase java que se ejecuta en el servidor que nos permite realizar peticiones web y devolver una respuesta.
+         * Utilizados para recibir parametros, ya sea GET (URL) o datos de un formulario HTML (POST).
+         * La respuesta que envia un servlet puede ser de tipo HTML, XML, JSON, archivos PDD, IMG, MP4, MP3.
+         * En una aplicacion MVC, los servlet juegan un papel de controlador.
+         * Son la base de muchos frameworks como Structs, Spring, JSF, etc.
+         * Si sabemos como funcionan los servelts, al utilizar cualquiera de los frameworks antes mencionados sera mas rapido
+         * el aprendizaje. 
+        */
+
+
+        // ESTRUCTURA DE UNA APLICACION WEB
+        /**
+         * WEB PAGES: directorio root, archivos html, css, js, JPSs, imagenes.
+         * META-INF: Directorio META-INF de una aplicacion en java EE.
+         * WEB-INF: generalmente tiene el archivo web.xml
+         * Source Packages: Aqui iran las clases java, incluso los Servlets.
+         * Libraries: archivos JAR.
+         */
+
+        
     }
 
     public static void imprimeMensaje(String... mensajes) {
