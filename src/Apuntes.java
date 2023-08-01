@@ -942,6 +942,12 @@ public class Apuntes {
          * Son accesibles a traves de un navegador web, PC, dispositivo movi. 
          * Son de tipo cliente - servidor.
          * Las aplicaciones web modernas almacenan y recuperan los datos de un servidor de base de datos.    
+         * 
+         * SERVIDORES DE APLICACIONES
+         * Contenedor Web: Capa Web MVC, SERVLETS -> JSP Y JSF -> MODEL 
+         * Contenedor EJB: 
+         *          * Capa Servicio: EJBS SERVICIOS REST
+         *          * Capa Datos: REPOSITORIOS OBJETOS JPA JDBC
          */    
 
          
@@ -953,7 +959,29 @@ public class Apuntes {
          * Son la base de muchos frameworks como Structs, Spring, JSF, etc.
          * Si sabemos como funcionan los servelts, al utilizar cualquiera de los frameworks antes mencionados sera mas rapido
          * el aprendizaje. 
+         * 
+         * Un servlet no puede ejecutarse por si solo (RUN). La forma de ejecutarlo siempre es mediante URL. "Servlet Maping".
+         * La configuracion de un servlet se realiza en el archivo WEB-INF/web.xml (deployment descriptor).
+         * 
+         * Puede ser ejecutado por medio de una URL (GET).
+         * Puede ser ejecutado por medio de un link (GET). Cuando se ejecuta de esta forma, en el servlet se ejecuta el metodo doGet(). 
+         * Puede ser ejecutado por medio de un formulario HTML (POST). Cuando se ejecuta de esta forma, en el servlet se ejecuta el metodo doPost().
+         * 
+         * Una de las potencias de los servlets es que podemos utilizar todo el codigo JAVA que deseemos para manipular los datos que nos envio un cliente.
+         *  
+         * CICLO REQUEST - RESPONSE de un SERVLET
+         * Client (Browser) -> Request for Servlet -> Web Server (TomCat) (Servlet Container (Servlet (doGET, doPOST))) -> DATABASE -> Servlet Container -> 
+         * Response for Servlet (HTML DOCUMENT, JSON, IG, MP3, MP4, ERROR 404, REDIRECTION) -> Cliente (Browser). 
         */
+
+        // CABECERA DE RESPUESTA CONTENT - TYPE
+        /**
+         * Indican al navegador web el tipo de respuesta por parte del navegador.
+         * Diferentes tipos de contenido: EXCEL, HTML, XML, IMAGENES.
+         * Se utiliza MIME (MULTIPURPOSE INTERNET MAIL EXTENSIONS).
+         * Ejemplo: response.SetContentType("image/jpeg"); 
+         * 
+         */
 
 
         // ESTRUCTURA DE UNA APLICACION WEB
@@ -962,7 +990,7 @@ public class Apuntes {
          * META-INF: Directorio META-INF de una aplicacion en java EE.
          * WEB-INF: generalmente tiene el archivo web.xml
          * Source Packages: Aqui iran las clases java, incluso los Servlets.
-         * Libraries: archivos JAR.
+         * Libraries: archivos JAR. 
          */
 
         
