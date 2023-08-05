@@ -980,7 +980,6 @@ public class Apuntes {
          * Diferentes tipos de contenido: EXCEL, HTML, XML, IMAGENES.
          * Se utiliza MIME (MULTIPURPOSE INTERNET MAIL EXTENSIONS).
          * Ejemplo: response.SetContentType("image/jpeg"); 
-         * 
          */
 
 
@@ -993,6 +992,31 @@ public class Apuntes {
          * Libraries: archivos JAR. 
          */
 
+         // JSPs -  JAVA SERVER PAGES
+         /**
+          * Son archivos que son ejecutados en el servidor. Se especializan en manejar codigo HTML, y ademas permiten insertar codigo 
+          * nativo Java por medio de JSP tags.
+          * En una aplicacion MVC (Model, View, Controller), los JSPs juegan el papel de la vista, es decir muestran informacion obtenida, o
+          * procesada por los Servlets. 
+          * A pesar de que se puede incluir codigo JAVA en los JSPs, no es muy recomendable, debido que en una aplicacion MVC, por lo general 
+          * en la vista solo es para mostrar informacion.
+          * JSPs - Presentacion, Servlets - procesar información, permite darle mantenimiento.
+          *
+          * ELEMENTOS DE UN JSP (Scriptlets)
+          * JSP SCRIPTLET: inserta cualquier codigo de java valido.  <%  %>
+          * Expresión JSP: <%=expresion%>, expresion se evalua y es renderizada, donde esta el tag.
+          * JSP Declaración: <%! campo, variable o metodo de declaración %>
+          * <%-- --%> JSP Comentario 
+          */
+
+          // Patron de diseño MVC (Modelo Vista Controlador) en JAVA EE
+          /**
+           * Permite dividir la aplicación en 3 niveles.
+           * Modelo = clases de negocio (JavaBeans) = y la clases de acceso a la Base de Datos (DAO).
+           * La vista es la presentación final mostrada al usuario, por lo general se utilizan los JSPs y HTML.
+           * Los Servlets hacen la función de controlador, es decir, permiten controlar el flujo de las peticiones HTTP.
+           * Los servlets comparten atributos a los JSPs, para que sean desplegados.
+           */
         
     }
 
