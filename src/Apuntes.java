@@ -1006,8 +1006,18 @@ public class Apuntes {
           * JSP SCRIPTLET: inserta cualquier codigo de java valido.  <%  %>
           * Expresión JSP: <%=expresion%>, expresion se evalua y es renderizada, donde esta el tag.
           * JSP Declaración: <%! campo, variable o metodo de declaración %>
-          * <%-- --%> JSP Comentario 
+          * <%-- --%> JSP Comentario
+          * <%@ %> Apertura y cierre para directivas/atributos de configuración de JSP. (Se coloca hasta arriba generalmente). 
           */
+
+          // JAVABEAN
+          /**
+           * Es una clase en java que:
+           * Tiene un constructor con 0 argumentos.
+           * Proporciona metodos get y set para todas las variables de instancia privadas que siguen el estandar de java.
+           * Para variables de instancia de tipo boolean se utiliza el metodo isProtected en vez de getPropiedad.
+           * Los JavaBean son accesados por los JSPs por medio de los metodos get y set utilizando EL y JSTL.
+           */
 
           // Patron de diseño MVC (Modelo Vista Controlador) en JAVA EE
           /**
