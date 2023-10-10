@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.lang.Math;
 
@@ -871,6 +872,55 @@ public class Apuntes {
          * https://docs.oracle.com/javase/9/docs/api/index.html?overview-summary.html
          * 
          */
+
+        // API DE COLECCIONES JAVA
+        /*
+         * Un alamacen de objetos dinamicos, no pueden almacenar datos primitivos como lo hace un array.
+         * Podemos usar cualuqier tipo de objeto y podemos usar una serie de metodos comunes, añadir, eliminar, obtener tamaño, ordenar etc.
+         * 
+         * Ejemplos de Colecciones
+         * Set: coleccion de objetos que no admite duplicados, ni ordenamiento, ejemplo: HashSet.
+         * Lista: coleccion de objetos que admite duplicados, cada uno lleva un indice asociado.
+         * Cola: coleccion de objetos que se comporta como lo haria un grupo de personas en la cola de una caja de un supermercado.
+         * Mapa (map): Relaciona una clave key con un valor. 
+         * 
+         * Collections > List >
+         * ArrayList: eficiente para acceder a elementos aleatorios, poca eficiencia al insertar elementos en medio.
+         * LinkedList: mucha eficiencia al insertar elementos en medio, no para acceder a elementos aleatorios.
+         * 
+         * Collections > Set >
+         * HasSet: elementos unicos, no acepta valores repetidos. 
+         * 
+         * MAP
+         * HasMap: Valores Key-value, key unica, acepta valores repetidos.
+         * TreeMap: Valores Key-value, estructura jerarquica.
+         */
+        System.out.println("\nCOLLECTIONS");
+
+        System.out.println("\nList");
+        List listaMeses = new ArrayList<>();
+        listaMeses.add("Enero");
+        listaMeses.add("Febrero");
+        listaMeses.add("Marzo");
+
+        System.out.println("Tamaño: " + listaMeses.size());
+        System.out.println("Ultimo elemento: " + listaMeses.get(listaMeses.size()-1));
+        System.out.println("Lista de meses: ");
+        System.out.println(listaMeses);
+        // agregando elementos en x posición
+        listaMeses.add(0, "Octubre");
+        // Podemos agregar repetidos
+        listaMeses.add("Octubre");
+        System.out.println(listaMeses);
+
+        System.out.println("\nArrayList");
+        ArrayList<String> persona = new ArrayList<>();
+        persona.add("Daniel");
+        persona.add("Pablo");
+        persona.add("Veronica");
+
+        System.out.println("Tamaño: " + persona.size());
+        System.out.println("Uno: " + persona.get(0));
 
         // EXCEPCIONES
         /**
