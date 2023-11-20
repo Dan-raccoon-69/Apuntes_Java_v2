@@ -952,6 +952,11 @@ public class Apuntes {
         Apuntes.imprimeMensaje("Mi", "perro", "se", "llama", "Lucas");
         Apuntes.sumaXelementos(2, 4, 6, 8, 20, 30, -30);
 
+        /* THREADS - Hilos
+         * Es usado para trabajar con multiples tareas. 
+         * Java alterna las tareas para una ejecución mas eficiente.
+         */
+
 
         /*  MODELO VISTA CONTROLADOR (MVC) 
          * MVC es un patrón de arquitectura de software que uytiliza 3 componentes.
