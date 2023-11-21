@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.lang.Math;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 /**
  * autor: Daniel De La Cruz.
@@ -955,8 +958,55 @@ public class Apuntes {
         /* THREADS - Hilos
          * Es usado para trabajar con multiples tareas. 
          * Java alterna las tareas para una ejecución mas eficiente.
+         * CONSULTA LA CARPETA LLAMADA THREADS PARA MAYOR ENTENDIMIENTO
          */
 
+        /* DATE/TIME API
+         * Disponible desde JAVA 8 en adelante.
+         * Usa threads-safe
+         * Intuitivo - muchos usan calendario gregoriano.
+         * Java.time = LocalDate, LocalTime, LocalDateTime, TimeFormater 
+         */
+        // NOW
+        LocalDate fechaActual = LocalDate.now();
+        LocalTime horaActual = LocalTime.now();
+        LocalDateTime fechaYhoraActual = LocalDateTime.now();
+        System.out.println("\nFecha actual: " + fechaActual);
+        System.out.println("Hora actual: " + horaActual);
+        System.out.println("Fecha Y Hora actual: " + fechaYhoraActual);
+        // OF
+        LocalDate fechaActual2 = LocalDate.of(2002, 10, 14);
+        LocalTime horaActual2 = LocalTime.of(22, 15, 32);
+        LocalDateTime fechaYhoraActual2 = LocalDateTime.of(2002, 10, 14, 22, 15, 32);
+        System.out.println("\n-------------------------");
+        System.out.println("Fecha actual: " + fechaActual2);
+        System.out.println("Hora actual: " + horaActual2);
+        System.out.println("Fecha Y Hora actual: " + fechaYhoraActual2);
+        // PARSE
+        LocalDate fechaActual3 = LocalDate.parse("2011-04-11");
+        LocalTime horaActual3 = LocalTime.parse("23:40:16");
+        LocalDateTime fechaYhoraActual3 = LocalDateTime.parse("2011-04-11T23:40:16");
+        System.out.println("\n-------------------------");
+        System.out.println("Fecha actual: " + fechaActual3);
+        System.out.println("Hora actual: " + horaActual3);
+        System.out.println("Fecha Y Hora actual: " + fechaYhoraActual3);
+        // ACCEDER A LOS PARAMETROS DE UNA VARIABLE
+        System.out.println("\n-------------------------");
+        LocalDateTime fechaYhoraActua4 = LocalDateTime.now();
+        System.out.println("Fecha actual anio: " + fechaYhoraActua4.getYear());
+        System.out.println("Fecha actual mes: " + fechaYhoraActua4.getMonth() + " " + fechaYhoraActua4.getMonthValue());
+        System.out.println("Fecha actual dia: " + fechaYhoraActua4.getDayOfMonth());
+        System.out.println("Hora actual: " + fechaYhoraActua4.getHour());
+        System.out.println("Minuto actual: " + fechaYhoraActua4.getMinute());
+        System.out.println("Segundo actual: " + fechaYhoraActua4.getSecond());
+        // COMPARACION DE FECHAS
+        System.out.println("\n-------------------------");
+        System.out.println(fechaActual2 + " - " + fechaActual3);
+        if(fechaActual2.isBefore(fechaActual3)){
+            System.out.println("La fecha 1 esta antes que la fecha 2");
+        }else{
+            System.out.println("La fecha 1 esta despues que la fecha 2");
+        }
 
         /*  MODELO VISTA CONTROLADOR (MVC) 
          * MVC es un patrón de arquitectura de software que uytiliza 3 componentes.
