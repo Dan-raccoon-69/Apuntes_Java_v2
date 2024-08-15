@@ -1132,7 +1132,9 @@ public class Apuntes {
            * Los Servlets hacen la función de controlador, es decir, permiten controlar el flujo de las peticiones HTTP.
            * Los servlets comparten atributos a los JSPs, para que sean desplegados.
            */
-        
+        System.out.println("\nRESTAAA -----");
+        restaXelementos(numeros);
+
     }
 
     public static void imprimeMensaje(String... mensajes) {
@@ -1148,5 +1150,13 @@ public class Apuntes {
         for (int numero : numeros)
             suma += numero;
         System.out.println(suma);
+    }
+
+    public static void restaXelementos(int... numeros) {
+        int resta = 0;
+        System.out.println("\nNumeró de parametros: " + numeros.length);
+        for (int numero : numeros)
+            resta -= numero;
+        System.out.println(resta);
     }
 }
