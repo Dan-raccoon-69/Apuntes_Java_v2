@@ -664,7 +664,7 @@ public class Apuntes {
 
         /**
          * El metodo toString es un metodo que se hereda por defecto de object.
-         * Nos muestra la referencia del objeto a menos que lo sobreescribamos. 
+         * Nos muestra la referencia del objeto a menos que lo sobreescribamos.
          * Para llamarlo no es necesario colocar: nameObjeto.toString();
          * Basta con colocar el nombre del objeto y nos mostrara por defecto el
          * metodo toString.
@@ -740,12 +740,14 @@ public class Apuntes {
 
         // CLASES Y METODOS FINAL
         /**
-         * Si un metodo es final, significa que no puede existir ningun otro metodo que se llame igual  
+         * Si un metodo es final, significa que no puede existir ningun otro metodo que
+         * se llame igual
          * en las clases que heredan de esta misma.
          * Ejemplo: public final void dibujar(){}
-         * Si una clase es final, significa que no puede haber ningun hijo heredado de esa clase.
+         * Si una clase es final, significa que no puede haber ningun hijo heredado de
+         * esa clase.
          * Ejemplo: final public class figura{}
-        */ 
+         */
 
         // PALABRA RESERVADA SUPER
         /**
@@ -878,21 +880,28 @@ public class Apuntes {
 
         // API DE COLECCIONES JAVA
         /*
-         * Un alamacen de objetos dinamicos, no pueden almacenar datos primitivos como lo hace un array.
-         * Podemos usar cualuqier tipo de objeto y podemos usar una serie de metodos comunes, añadir, eliminar, obtener tamaño, ordenar etc.
+         * Un alamacen de objetos dinamicos, no pueden almacenar datos primitivos como
+         * lo hace un array.
+         * Podemos usar cualuqier tipo de objeto y podemos usar una serie de metodos
+         * comunes, añadir, eliminar, obtener tamaño, ordenar etc.
          * 
          * Ejemplos de Colecciones
-         * Set: coleccion de objetos que no admite duplicados, ni ordenamiento, ejemplo: HashSet.
-         * Lista: coleccion de objetos que admite duplicados, cada uno lleva un indice asociado.
-         * Cola: coleccion de objetos que se comporta como lo haria un grupo de personas en la cola de una caja de un supermercado.
-         * Mapa (map): Relaciona una clave key con un valor. 
+         * Set: coleccion de objetos que no admite duplicados, ni ordenamiento, ejemplo:
+         * HashSet.
+         * Lista: coleccion de objetos que admite duplicados, cada uno lleva un indice
+         * asociado.
+         * Cola: coleccion de objetos que se comporta como lo haria un grupo de personas
+         * en la cola de una caja de un supermercado.
+         * Mapa (map): Relaciona una clave key con un valor.
          * 
          * Collections > List >
-         * ArrayList: eficiente para acceder a elementos aleatorios, poca eficiencia al insertar elementos en medio.
-         * LinkedList: mucha eficiencia al insertar elementos en medio, no para acceder a elementos aleatorios.
+         * ArrayList: eficiente para acceder a elementos aleatorios, poca eficiencia al
+         * insertar elementos en medio.
+         * LinkedList: mucha eficiencia al insertar elementos en medio, no para acceder
+         * a elementos aleatorios.
          * 
          * Collections > Set >
-         * HasSet: elementos unicos, no acepta valores repetidos. 
+         * HasSet: elementos unicos, no acepta valores repetidos.
          * 
          * MAP
          * HasMap: Valores Key-value, key unica, acepta valores repetidos.
@@ -907,7 +916,7 @@ public class Apuntes {
         listaMeses.add("Marzo");
 
         System.out.println("Tamaño: " + listaMeses.size());
-        System.out.println("Ultimo elemento: " + listaMeses.get(listaMeses.size()-1));
+        System.out.println("Ultimo elemento: " + listaMeses.get(listaMeses.size() - 1));
         System.out.println("Lista de meses: ");
         System.out.println(listaMeses);
         // agregando elementos en x posición
@@ -955,17 +964,19 @@ public class Apuntes {
         Apuntes.imprimeMensaje("Mi", "perro", "se", "llama", "Lucas");
         Apuntes.sumaXelementos(2, 4, 6, 8, 20, 30, -30);
 
-        /* THREADS - Hilos
-         * Es usado para trabajar con multiples tareas. 
+        /*
+         * THREADS - Hilos
+         * Es usado para trabajar con multiples tareas.
          * Java alterna las tareas para una ejecución mas eficiente.
          * CONSULTA LA CARPETA LLAMADA THREADS PARA MAYOR ENTENDIMIENTO
          */
 
-        /* DATE/TIME API
+        /*
+         * DATE/TIME API
          * Disponible desde JAVA 8 en adelante.
          * Usa threads-safe
          * Intuitivo - muchos usan calendario gregoriano.
-         * Java.time = LocalDate, LocalTime, LocalDateTime, TimeFormater 
+         * Java.time = LocalDate, LocalTime, LocalDateTime, TimeFormater
          */
         // NOW
         LocalDate fechaActual = LocalDate.now();
@@ -1002,91 +1013,106 @@ public class Apuntes {
         // COMPARACION DE FECHAS
         System.out.println("\n-------------------------");
         System.out.println(fechaActual2 + " - " + fechaActual3);
-        if(fechaActual2.isBefore(fechaActual3)){
+        if (fechaActual2.isBefore(fechaActual3)) {
             System.out.println("La fecha 1 esta antes que la fecha 2");
-        }else{
+        } else {
             System.out.println("La fecha 1 esta despues que la fecha 2");
         }
 
-        /*  MODELO VISTA CONTROLADOR (MVC) 
+        /*
+         * MODELO VISTA CONTROLADOR (MVC)
          * MVC es un patrón de arquitectura de software que uytiliza 3 componentes.
          * Separa la logica de la aplicación de la logica de la vista en una aplicación.
-         * Se utiliza tanto en componentes graficos basicos hasta sistemas empresariales.
+         * Se utiliza tanto en componentes graficos basicos hasta sistemas
+         * empresariales.
          * 
-         * Modelo: se encarga de los datos, generalmente consultando la base de datos, 
+         * Modelo: se encarga de los datos, generalmente consultando la base de datos,
          * actualizaciones, consultas, busquedas, etc.
          * 
-         * Vista: representación visual de los datos, todo lo que tenga que ver con la interfaz grafica va aqui.
+         * Vista: representación visual de los datos, todo lo que tenga que ver con la
+         * interfaz grafica va aqui.
          * 
-         * Controller: controla, recibe las ordenes del usuario a traves de los eventos de la interfaz grafica
+         * Controller: controla, recibe las ordenes del usuario a traves de los eventos
+         * de la interfaz grafica
          * y se encarga de solicitar los datos al modelo y de comunicarselos a la vista.
-        */
-
+         */
 
         // JAVA WEB
         /*
          * Java Web es una parte, es una especificación de Java EE.
          */
 
-
         // CONCEPTOS - PALABRAS PARA JAVA WEB
         /**
-         * Servlet: Web dinamicas, una especificacion, es una clase en java que nos permite manejar
-         * peticiones y las requiest mediante el protocolo HTTP. 
+         * Servlet: Web dinamicas, una especificacion, es una clase en java que nos
+         * permite manejar
+         * peticiones y las requiest mediante el protocolo HTTP.
          * JSP
          * JPA
          * Java Bean Validation
          * JSF 2
          * JTA
-          NO OLVIDAR QUE SIGUEN SIENDO PARTE DE JAVA EE */
-
+         * NO OLVIDAR QUE SIGUEN SIENDO PARTE DE JAVA EE
+         */
 
         // APLICACION WEB
         /**
-         * Es un conjunto de paginas web que son generadas en respuesta a peticiones de un usuario.
-         * Son accesibles a traves de un navegador web, PC, dispositivo movi. 
+         * Es un conjunto de paginas web que son generadas en respuesta a peticiones de
+         * un usuario.
+         * Son accesibles a traves de un navegador web, PC, dispositivo movi.
          * Son de tipo cliente - servidor.
-         * Las aplicaciones web modernas almacenan y recuperan los datos de un servidor de base de datos.    
+         * Las aplicaciones web modernas almacenan y recuperan los datos de un servidor
+         * de base de datos.
          * 
          * SERVIDORES DE APLICACIONES
-         * Contenedor Web: Capa Web MVC, SERVLETS -> JSP Y JSF -> MODEL 
-         * Contenedor EJB: 
-         *          * Capa Servicio: EJBS SERVICIOS REST
-         *          * Capa Datos: REPOSITORIOS OBJETOS JPA JDBC
-         */    
+         * Contenedor Web: Capa Web MVC, SERVLETS -> JSP Y JSF -> MODEL
+         * Contenedor EJB:
+         * * Capa Servicio: EJBS SERVICIOS REST
+         * * Capa Datos: REPOSITORIOS OBJETOS JPA JDBC
+         */
 
-         
-        /* SERVLET 
-         * Es una clase java que se ejecuta en el servidor que nos permite realizar peticiones web y devolver una respuesta.
-         * Utilizados para recibir parametros, ya sea GET (URL) o datos de un formulario HTML (POST).
-         * La respuesta que envia un servlet puede ser de tipo HTML, XML, JSON, archivos PDD, IMG, MP4, MP3.
+        /*
+         * SERVLET
+         * Es una clase java que se ejecuta en el servidor que nos permite realizar
+         * peticiones web y devolver una respuesta.
+         * Utilizados para recibir parametros, ya sea GET (URL) o datos de un formulario
+         * HTML (POST).
+         * La respuesta que envia un servlet puede ser de tipo HTML, XML, JSON, archivos
+         * PDD, IMG, MP4, MP3.
          * En una aplicacion MVC, los servlet juegan un papel de controlador.
          * Son la base de muchos frameworks como Structs, Spring, JSF, etc.
-         * Si sabemos como funcionan los servelts, al utilizar cualquiera de los frameworks antes mencionados sera mas rapido
-         * el aprendizaje. 
+         * Si sabemos como funcionan los servelts, al utilizar cualquiera de los
+         * frameworks antes mencionados sera mas rapido
+         * el aprendizaje.
          * 
-         * Un servlet no puede ejecutarse por si solo (RUN). La forma de ejecutarlo siempre es mediante URL. "Servlet Maping".
-         * La configuracion de un servlet se realiza en el archivo WEB-INF/web.xml (deployment descriptor).
+         * Un servlet no puede ejecutarse por si solo (RUN). La forma de ejecutarlo
+         * siempre es mediante URL. "Servlet Maping".
+         * La configuracion de un servlet se realiza en el archivo WEB-INF/web.xml
+         * (deployment descriptor).
          * 
          * Puede ser ejecutado por medio de una URL (GET).
-         * Puede ser ejecutado por medio de un link (GET). Cuando se ejecuta de esta forma, en el servlet se ejecuta el metodo doGet(). 
-         * Puede ser ejecutado por medio de un formulario HTML (POST). Cuando se ejecuta de esta forma, en el servlet se ejecuta el metodo doPost().
+         * Puede ser ejecutado por medio de un link (GET). Cuando se ejecuta de esta
+         * forma, en el servlet se ejecuta el metodo doGet().
+         * Puede ser ejecutado por medio de un formulario HTML (POST). Cuando se ejecuta
+         * de esta forma, en el servlet se ejecuta el metodo doPost().
          * 
-         * Una de las potencias de los servlets es que podemos utilizar todo el codigo JAVA que deseemos para manipular los datos que nos envio un cliente.
-         *  
+         * Una de las potencias de los servlets es que podemos utilizar todo el codigo
+         * JAVA que deseemos para manipular los datos que nos envio un cliente.
+         * 
          * CICLO REQUEST - RESPONSE de un SERVLET
-         * Client (Browser) -> Request for Servlet -> Web Server (TomCat) (Servlet Container (Servlet (doGET, doPOST))) -> DATABASE -> Servlet Container -> 
-         * Response for Servlet (HTML DOCUMENT, JSON, IG, MP3, MP4, ERROR 404, REDIRECTION) -> Cliente (Browser). 
-        */
+         * Client (Browser) -> Request for Servlet -> Web Server (TomCat) (Servlet
+         * Container (Servlet (doGET, doPOST))) -> DATABASE -> Servlet Container ->
+         * Response for Servlet (HTML DOCUMENT, JSON, IG, MP3, MP4, ERROR 404,
+         * REDIRECTION) -> Cliente (Browser).
+         */
 
         // CABECERA DE RESPUESTA CONTENT - TYPE
         /**
          * Indican al navegador web el tipo de respuesta por parte del navegador.
          * Diferentes tipos de contenido: EXCEL, HTML, XML, IMAGENES.
          * Se utiliza MIME (MULTIPURPOSE INTERNET MAIL EXTENSIONS).
-         * Ejemplo: response.SetContentType("image/jpeg"); 
+         * Ejemplo: response.SetContentType("image/jpeg");
          */
-
 
         // ESTRUCTURA DE UNA APLICACION WEB
         /**
@@ -1094,46 +1120,79 @@ public class Apuntes {
          * META-INF: Directorio META-INF de una aplicacion en java EE.
          * WEB-INF: generalmente tiene el archivo web.xml
          * Source Packages: Aqui iran las clases java, incluso los Servlets.
-         * Libraries: archivos JAR. 
+         * Libraries: archivos JAR.
          */
 
-         // JSPs -  JAVA SERVER PAGES
-         /**
-          * Son archivos que son ejecutados en el servidor. Se especializan en manejar codigo HTML, y ademas permiten insertar codigo 
-          * nativo Java por medio de JSP tags.
-          * En una aplicacion MVC (Model, View, Controller), los JSPs juegan el papel de la vista, es decir muestran informacion obtenida, o
-          * procesada por los Servlets. 
-          * A pesar de que se puede incluir codigo JAVA en los JSPs, no es muy recomendable, debido que en una aplicacion MVC, por lo general 
-          * en la vista solo es para mostrar informacion.
-          * JSPs - Presentacion, Servlets - procesar información, permite darle mantenimiento.
-          *
-          * ELEMENTOS DE UN JSP (Scriptlets)
-          * JSP SCRIPTLET: inserta cualquier codigo de java valido.  <%  %>
-          * Expresión JSP: <%=expresion%>, expresion se evalua y es renderizada, donde esta el tag.
-          * JSP Declaración: <%! campo, variable o metodo de declaración %>
-          * <%-- --%> JSP Comentario
-          * <%@ %> Apertura y cierre para directivas/atributos de configuración de JSP. (Se coloca hasta arriba generalmente). 
-          */
+        // JSPs - JAVA SERVER PAGES
+        /**
+         * Son archivos que son ejecutados en el servidor. Se especializan en manejar
+         * codigo HTML, y ademas permiten insertar codigo
+         * nativo Java por medio de JSP tags.
+         * En una aplicacion MVC (Model, View, Controller), los JSPs juegan el papel de
+         * la vista, es decir muestran informacion obtenida, o
+         * procesada por los Servlets.
+         * A pesar de que se puede incluir codigo JAVA en los JSPs, no es muy
+         * recomendable, debido que en una aplicacion MVC, por lo general
+         * en la vista solo es para mostrar informacion.
+         * JSPs - Presentacion, Servlets - procesar información, permite darle
+         * mantenimiento.
+         *
+         * ELEMENTOS DE UN JSP (Scriptlets)
+         * JSP SCRIPTLET: inserta cualquier codigo de java valido. <% %>
+         * Expresión JSP: <%=expresion%>, expresion se evalua y es renderizada, donde
+         * esta el tag.
+         * JSP Declaración: <%! campo, variable o metodo de declaración %>
+         * <%-- --%> JSP Comentario
+         * <%@ %> Apertura y cierre para directivas/atributos de configuración de JSP.
+         * (Se coloca hasta arriba generalmente).
+         */
 
-          // JAVABEAN
-          /**
-           * Es una clase en java que:
-           * Tiene un constructor con 0 argumentos.
-           * Proporciona metodos get y set para todas las variables de instancia privadas que siguen el estandar de java.
-           * Para variables de instancia de tipo boolean se utiliza el metodo isProtected en vez de getPropiedad.
-           * Los JavaBean son accesados por los JSPs por medio de los metodos get y set utilizando EL y JSTL.
-           */
+        // JAVABEAN
+        /**
+         * Es una clase en java que:
+         * Tiene un constructor con 0 argumentos.
+         * Proporciona metodos get y set para todas las variables de instancia privadas
+         * que siguen el estandar de java.
+         * Para variables de instancia de tipo boolean se utiliza el metodo isProtected
+         * en vez de getPropiedad.
+         * Los JavaBean son accesados por los JSPs por medio de los metodos get y set
+         * utilizando EL y JSTL.
+         */
 
-          // Patron de diseño MVC (Modelo Vista Controlador) en JAVA EE
-          /**
-           * Permite dividir la aplicación en 3 niveles.
-           * Modelo = clases de negocio (JavaBeans) = y la clases de acceso a la Base de Datos (DAO).
-           * La vista es la presentación final mostrada al usuario, por lo general se utilizan los JSPs y HTML.
-           * Los Servlets hacen la función de controlador, es decir, permiten controlar el flujo de las peticiones HTTP.
-           * Los servlets comparten atributos a los JSPs, para que sean desplegados.
-           */
+        // Patron de diseño MVC (Modelo Vista Controlador) en JAVA EE
+        /**
+         * Permite dividir la aplicación en 3 niveles.
+         * Modelo = clases de negocio (JavaBeans) = y la clases de acceso a la Base de
+         * Datos (DAO).
+         * La vista es la presentación final mostrada al usuario, por lo general se
+         * utilizan los JSPs y HTML.
+         * Los Servlets hacen la función de controlador, es decir, permiten controlar el
+         * flujo de las peticiones HTTP.
+         * Los servlets comparten atributos a los JSPs, para que sean desplegados.
+         */
         System.out.println("\nRESTAAA -----");
         restaXelementos(numeros);
+
+        /*
+         * CLASES ENU *******************************************/
+
+        /*
+         * ENUM SON TIPOS ESPECIALES DE DATOS QUE NOSPERMITE LIMITAR EL NUM DE
+         * VALORESQUE UNA VARIABLE PUEDE TOMAR}
+         * UTILES PARA COLECCIONES FINITAS DE VALORES
+         *
+         * EJEMPLOS, DIAS DE LA SEMANA, ESTADOS DE UNA MAQUINA ETC
+         *
+         * SON CONSTANTES, SIGUES SIN CONVENCIONES
+         */
+
+        System.out.println("CLASES ENU");
+        CuentaBancaria cuenta1 = new CuentaBancaria(23_500,TipoDeCuenta.AHORRO,"Daniel De La Cruz");
+        System.out.println("\n" + cuenta1.Datos());
+        cuenta1.setTipodeCuenta(TipoDeCuenta.NOMINA);
+        System.out.println("\n" + cuenta1.Datos());
+
+
 
     }
 
